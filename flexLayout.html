@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/slidermaking.css">
+    <link rel="stylesheet" href="ism/css/my-slider.css"/>
+    <script src="ism/js/ism-2.2.min.js"></script>
+    <style>
+        *
+        {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .box
+        {
+            width: 60%;
+            min-height: 300px;
+            /*border: 1px solid red;*/
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            background-color: #F8F6E3;
+        }
+        .logo
+        {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            min-height: 60px;
+            /*border: 1px solid gray;*/
+            background-color: #FFEBB2;
+            font-family: "Poppins", sans-serif;
+            margin-bottom: 10px;
+        }
+        .logo h2
+        {
+            color: red;
+            padding: 10px;
+            margin-left: 15px;
+            font-size: 2em;
+        }
+        .menu
+        {
+            display: flex;
+            flex-direction:row;
+            width: 100;
+            min-height: 60px;
+            background-color: brown;
+            margin-bottom: 10px;
+        }
+        .menu ul
+        {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .menu ul li
+        {
+            list-style-type: none;
+        }
+        .menu ul li a
+        {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2em;
+        }
+        .menu ul li a:hover
+        {
+            background-color: aquamarine;
+        }
+
+        .slider
+        {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            min-height: 200px;
+           /* border: 3px solid aqua;*/
+        }
+        .main-body-con
+        {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            min-height: 300px;
+            /*border: 1px solid lightgreen;*/
+            margin-top: 10px;
+            justify-content: space-around;
+        }
+        .main-body-con .sidebar{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-basis: 23%;
+            background-color: orange;
+        }
+        .main-body-con .con{
+            display: flex;
+            flex-direction: row;
+            flex-basis: 75%;
+            background-color: lightgrey;
+            justify-content: center;
+            align-items: center;  
+        }
+
+        .footer
+        {
+            width: 100%;
+            min-height: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            background-color: brown;
+            margin-top: 10px;
+            font-size: 1.5em;
+        }
+
+        @media only screen and (max-width:768px) 
+        {
+            .box{
+                width: 100%;
+            }
+            .menu{
+                flex-direction: column;
+            }
+            .menu ul{
+                flex-direction: column;
+                background-color: teal;
+                color: white;
+            }
+            .menu ul li:hover{
+               background-color: crimson;
+               color: white;
+            }
+            .main-body-con{
+                flex-direction: column;
+            }
+            .sidebar{
+                min-height: 200px;
+                margin-bottom: 10px;
+            }
+            .con{
+                min-height: 300px;
+            }
+            .footer h4{
+                font-size: 3.5vw;
+            }
+        }
+
+        @media only screen and (max-width:500px) 
+        {
+            .box{
+                width: 100%;
+            }
+            .menu{
+                flex-direction: column;
+            }
+            .menu ul{
+                flex-direction: column;
+                background-color: green;
+                color: white;
+            }
+            .menu ul li:hover{
+               background-color: crimson;
+               color: white;
+            }
+            .main-body-con{
+                flex-direction: column;
+            }
+            .sidebar{
+                min-height: 200px;
+                margin-bottom: 10px;
+            }
+            .con{
+                min-height: 300px;
+            }
+            .footer h4{
+                font-size: 3.5vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="logo">
+            <h2>Comapany Name</h2>
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Conatct</a></li>
+                <li><a href="#">Search</a></li>
+                <li><a href="#">Upadate</a></li>
+            </ul>
+        </div>
+
+        <div class="slider">
+            
+<div class="ism-slider" data-play_type="loop" data-interval="3000" data-image_fx="zoompan" id="my-slider">
+    <ol>
+      <li>
+        <img src="ism/image/slides/flower-729514_1280.jpg">
+        <!-- <div class="ism-caption ism-caption-0">My slide caption text</div> -->
+      </li>
+      <li>
+        <img src="ism/image/slides/beautiful-701678_1280.jpg">
+        <!-- <div class="ism-caption ism-caption-0">My slide caption text</div> -->
+      </li>
+      <li>
+        <img src="ism/image/slides/summer-192179_1280.jpg">
+        <!-- <div class="ism-caption ism-caption-0">My slide caption text</div> -->
+      </li>
+      <li>
+        <img src="ism/image/slides/city-690332_1280.jpg">
+        <!-- <div class="ism-caption ism-caption-0">My slide caption text</div> -->
+      </li>
+      <li>
+        <img src="ism/image/slides/bora-bora-685303_1280.jpg">
+        <!-- <div class="ism-caption ism-caption-0">My slide caption text</div> -->
+      </li>
+    </ol>
+  </div>
+        </div>
+
+        <div class="main-body-con">
+            <div class="sidebar">
+                sidebar
+            </div>
+
+            <div class="con">
+                content
+            </div>
+        </div>
+
+        <div class="footer">
+            <h2>This website is maintain by Mahesh &copy;2024</h2>
+        </div>
+    </div>
+</body>
+</html>

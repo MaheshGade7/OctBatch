@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Template</title>
+    <link rel="stylesheet" href="ism/css/my-slider.css"/>
+        <script src="ism/js/ism-2.2.min.js"></script>
+    <style>
+        *
+        {
+            padding: 0; 
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .box
+        {
+            width:100%;
+            min-height: 300px;
+            /*border: 1px solid red;*/
+            margin: auto;
+        }
+        .main-logo-menu 
+        {
+            width: 100%;
+            min-height:60px;
+           /* border: 2px solid black;*/
+            display: flex;
+            background-color: #EADBC8;
+        }
+        .logo 
+        {
+            width: 50%;
+            min-height: 60px;
+            /*border: 1px solid gold;*/
+        }
+        .logo h2
+        {
+            padding: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-left: 50px;
+        }
+        .menu 
+        {
+            width: 50%;
+            min-height: 60px;
+            /*border: 1px solid red;*/
+            padding-top: 15px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .menu a
+        {
+            padding: 20px;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        .menu a:hover
+        {
+            color: aqua;
+        }
+
+        .slider
+        {
+            width: 100%;
+            min-height: 300px;
+            /*border: 2px solid black;*/
+        }
+
+        .content
+        {
+            width: 100%;
+            min-height: 300px;
+           /* border: 1px solid rgb(15, 0, 128);*/
+            display: flex;
+            background-color: #4793AF;
+        }
+        .con1
+        {
+            width: 33.33%;
+            min-height: 300px;
+           /* border: 1px solid black;*/
+            padding-top: 40px;
+        }
+        .con1 img
+        {
+            margin-left: 220px;   
+            
+        }
+        .con1 h2
+        {
+            text-align: center;
+            font-size: 1.5em;
+            color: white;
+        }
+        .con1 h3
+        {
+            text-align: justify;
+            text-align: center;
+            color: white;
+            padding-top: 15px;
+        }
+
+        .con
+        {
+            width: 100%;
+            height: 300px;
+           /* border: 1px solid darkred;*/
+            display: flex;
+        }
+        .con2
+        {
+            width: 50%;
+            min-height: 300px;
+            /*border: 1px solid yellow;*/
+        }
+        .con2 h2
+        {
+            text-align: center;
+            padding-top: 50px;
+        }
+        .con2 h3
+        {
+            text-align: center;
+        }
+        .con2 p
+        {
+            text-align: center;
+            padding: 20px;
+        }
+        .con2 button 
+        {
+            padding: 10px;
+            font-size: 1.2em;
+            margin-left: 140px;
+        }
+        .con2 img
+        {
+            width: 100%;
+            height: 100%;
+            border-top-left-radius: 40px;
+            border-top-right-radius: 40px;
+            border-bottom-left-radius: 40px;    
+            border-bottom-right-radius: 40px;
+        }
+
+        .mission
+        {
+
+            width: 100%;
+            min-height: 320px;
+            /*border: 1px solid red;*/
+            display: flex;
+        }
+        .mis 
+        {
+            width: 50%;
+            min-height: 300px;
+            /*border: 1px solid black;*/
+            padding-top: 40px;
+        }
+        .mis img
+        {
+            margin-left: 60px;
+        }
+        .mis h2
+        {
+            padding-top: 25px;
+            font-size: 1.5em;
+            margin-left: 10px;
+            text-shadow: 5px 5px 5px gray;
+        }
+        .mis p
+        {
+            text-align: justify;
+            padding-top: 20px;
+            margin-left: 50px;
+            margin-right: 60px;
+            font-size: 1.2em;
+        }
+        .missionHeading{
+            display:flex;
+        }
+        .mis h3
+        {
+            padding-top: 10px;
+            margin-left: 50px;
+        }
+        .newcon
+        {
+            width: 100%;
+            min-height: 180px;
+            /*border: 1px solid green;*/
+            display: flex;
+        }
+        .new7
+        {
+            width: 50%;
+            height: 150px;
+            /*border: 1px solid black;*/
+        }
+        .new7 h1
+        {
+            margin-left: 20px;
+            padding-top: 20px;
+        }
+
+        .head
+        {
+            width: 100%;
+            min-height: 300px;
+            /*border: 1px solid black;*/
+            background-color:#4793AF;
+            padding-top: 30px;
+        }
+        .head h2
+        {
+            font-size: 2em;
+            padding-top: 20px;
+            text-align: center;
+        }
+        .head h3
+        {
+            text-align: center;
+            padding-top: 10px;
+            font-size: 1.5em;
+        }
+        .head img
+        {
+            margin-left: 230px;
+            
+        }
+
+
+        .footer
+        {
+            width: 100%;
+            min-height: 70px;
+            border: 1px solid blue;
+        }
+        .footer h2
+        {
+            padding: 20px;
+            text-align: center;
+            color: red;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="main-logo-menu">
+            <div class="logo">
+                <h2>Company Name</h2>
+            </div>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+
+        <div class="slider">
+            <div class="ism-slider" data-play_type="loop" data-interval="3000" data-image_fx="zoompan" id="my-slider">
+                <ol>
+                  <li>
+                    <img src="ism/image/slides/flower-729514_1280.jpg">
+                    <!-- <div class="ism-caption ism-caption-0">My slide caption text</div> -->
+                  </li>
+                  <li>
+                    <img src="ism/image/slides/beautiful-701678_1280.jpg">
+                    <!-- <div class="ism-caption ism-caption-0">My slide caption text</div> -->
+                  </li>
+                  <li>
+                    <img src="ism/image/slides/summer-192179_1280.jpg">
+                    <!-- <div class="ism-caption ism-caption-0">My slide caption text</div> -->
+                  </li>
+                  <li>
+                    <img src="ism/image/slides/city-690332_1280.jpg">
+                    <!-- <div class="ism-caption ism-caption-0">My slide caption text</div> -->
+                  </li>
+                  <li>
+                    <img src="ism/image/slides/bora-bora-685303_1280.jpg">
+                    <!-- <div class="ism-caption ism-caption-0">My slide caption text</div> -->
+                  </li>
+                </ol>
+              </div>
+        </div>
+
+        <div class="content">
+            <div class="con1">
+                <img src="./imeges/account services.png" width="64px" height="64px">
+                <h2>Accounting Services</h2>
+                <h3>We offer full range of comprehensive<br>
+                    Accounting services to companies throughout<br>
+                    the US and Eropian countries.
+                </h3>
+            </div>
+            <div class="con1">
+                <img src="./imeges/incom tax.png" width="64px" height="64px">
+                <h2>Icome Tax</h2>
+                <h3>This service allow you to submit and view <br>
+                    Your tax returns and receive instant<br>
+                    notification of the return receipt.
+                </h3>
+            </div>
+            <div class="con1">
+                <img src="./imeges/9044514_finance_icon.png" width="64px" height="64px">
+                <h2>Financial Services</h2>
+                <h3>Our company provides various financial<br> 
+                    services including insurances,wealth<br>
+                    management ,tax counsulting etc.
+                </h3>
+            </div>
+        </div>
+
+        <div class="con">
+            <div class="con2">
+                <h2>Download Our</h2>
+                <h3>Tax Guide App</h3>
+                <p>We are glad to introduce our brand new Tax Guide App, a perfect solution for individual tax management our clients have been waiting for. It is available now for all iOS and Android device owners.</p>
+                <button id="m">Get iOS App</button>
+                <button>Get Android App</button>
+            </div>
+            <div class="con2">
+                <img src="./imeges/emp.webp">
+            </div>
+        </div>
+
+        <div class="mission">
+            <div class="mis">
+                <div class="missionHeading">
+                    <div>
+                        <img src="./imeges/mission4.png" width="64px" height="64px">
+                    </div>
+                    <div>
+                        <h2>Our Mission</h2>   
+                    </div>
+                </div>
+               <p>Our mission is to provide accounting and tax services of a superior quality. The responsive, personal attention we provide for each client, regardless how large or small, is the key to our approach</p>
+               <h3>&#9989;Providing high-quality accounting & tax services</h3>
+               <h3>&#9989;Sharing professional experience in tax management</h3>
+                <h3>&#9989;Offering full support to all our clients</h3>
+            </div>
+            <div class="mis">
+                <div class="newcon">
+                    <div class="new7">
+                        <h1>750</h1>
+                        <h2>Satisfied Clients</h3>
+                    </div>
+                    <div class="new7">
+                        <h1>72</h1>
+                        <h2>Team Members</h2>
+                    </div>
+                </div>
+                <div class="newcon">
+                    <div class="new7">
+                        <h1>715</h1>
+                        <h2>Successful Cases</h2>
+                    </div>
+                    <div class="new7">
+                        <h1>99%</h1>
+                        <h2>Satisfaction Rate</h2>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="head">
+                <h2><span style="color: white;">Monthly</span> Offer</h2>
+                <h3>Get our FREE financial consultation for your business taxes</h3>
+                <img src="./imeges/insta icon.png" width="100px" height="100px">
+                <img src="./imeges/linked in icon.png" width="100px" height="100px">
+                <img src="./imeges/facebook icon.png" width="100px" height="100px">
+                <img src="./imeges/incom tax.png" width="100px" height="100px">
+            </div>
+
+            <div class="footer">
+                <h2>This Website maintain by Mahesh &copy;2024</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        *
+        {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .box
+        {
+            width: 80%;
+            min-height: 100px;
+            /*border: 2px solid red;*/
+            margin: 10px auto;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(6,100px);
+            grid-gap: 10px;
+            grid-template-rows: 60px 60px 500px auto auto 50px;
+            border-radius: 15px;
+        }
+        .b1
+        {
+            background-color: red;
+            color: white;
+            grid-column: 1/-1;
+            border-radius:15px ;
+        }
+        .b1 h1
+        {
+            padding: 5px;
+            font-family: "Poppins", sans-serif;
+            text-shadow: 5px  5px 5px gray;
+        }
+        .b2
+        {
+            background-color: gold;
+            color: white;
+            grid-column: 1/-1; 
+            padding-top: 15px;
+            border-radius: 15px;
+        }
+        .b2 a
+        {
+            padding: 10px;
+            text-decoration: none;
+            font-family: "Poppins", sans-serif;
+            font-size: 1.2em;
+        }
+        .b3
+        {
+            background-color: green;
+            color: white;
+            grid-column: 1/-1;
+            border-radius: 15px;
+        }
+        .b3 img
+        {
+            width: 100%;
+            height: 100%;
+            border-radius: 15px;
+        }
+        .b4
+        {
+            background-color: rgb(113, 212, 212);
+            color: white;
+            grid-column: 1/-1;
+            border-radius: 15px;
+        }
+        .b4 .headet_text h2
+        {
+            padding: 10px;
+            font-family: "Poppins", sans-serif;
+        }
+        .b4 .answer p
+        {
+            padding: 10px;
+            font-family: "Poppins", sans-serif;
+            text-align: justify;
+            
+        }
+        .b5
+        {
+            background-color:royalblue;
+            color: white;
+            grid-column: 1/-1;
+            border-radius: 15px;
+        }
+        .b5 img
+        {
+            width: 100%;
+            height: 100%;
+            border-radius: 15px;
+        }
+
+        .b6
+        {
+            background-color:chartreuse;
+            color: white;
+            grid-column: 1/-1;
+            border-radius: 15px;    
+        }
+        .b6 h2
+        {
+            padding: 10px;
+            color: white;  
+            align-items: center;
+            text-shadow: 5px 5px 5px gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+        <div class="b1">
+            <h1>Company Name</h1>
+        </div>
+        <div class="b2">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <a href="#">Products</a>
+        </div>
+        <div class="b3">
+            <img src="./imeges/flowers-276014_1280.jpg">
+        </div>
+        <div class="b4">
+
+            <div class="headet_text">
+                <h2>What is HTML?</h2>
+            </div>
+
+            <div class="answer">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, aliquid voluptate. 
+                Architecto, vitae iusto illum sed nostrum ad eaque voluptatum necessitatibus quae doloribus 
+                atque alias laborum amet est maxime, suscipit dolorem iste beatae expedita aperiam 
+                exercitationem. Architecto aperiam perferendis qui, fugiat, ipsum est mollitia impedit, autem 
+                dignissimos earum quam libero ullam? Illum magnam enim delectus mollitia fugit praesentium 
+                cumque quia veritatis? Velit cumque quod fuga perspiciatis, debitis eaque rem animi voluptate, 
+                quidem ducimus omnis, nihil illo. Excepturi, omnis culpa laudantium assumenda cumque quibusdam 
+                exercitationem id officia magnam consectetur amet inventore aliquid quae labore eveniet non 
+                neque molestiae quam! Illum, quisquam.</p>
+            </div>
+
+            <div class="headet_text">
+                <h2>What is HTML?</h2>
+            </div>
+
+            <div class="answer">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam hic repellat quos culpa, 
+                similique modi laboriosam quia repellendus impedit nihil? Adipisci distinctio, commodi eius ea 
+                dolor unde dignissimos laborum deleniti? Aliquam ducimus praesentium officiis doloribus, 
+                accusantium corporis voluptatem eum aspernatur in quos similique asperiores eius voluptates 
+                molestiae? Accusantium dolor natus vitae facilis reprehenderit repudiandae, perferendis itaque 
+                quo, quae nam maiores nemo ab dicta similique recusandae fugit amet dolorem numquam a fuga 
+                consequatur unde provident, quod aliquam. Magnam nulla nemo sed assumenda provident praesentium 
+                delectus doloremque ea voluptas architecto modi enim ipsa sequi aperiam repellat ut, omnis sit 
+                numquam inventore qui.</p>
+            </div>
+
+            <div class="headet_text">
+                <h2>What is HTML?</h2>
+            </div>
+
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim rerum voluptate, delectus 
+                distinctio laborum explicabo pariatur quasi voluptatem eum libero nulla obcaecati quos 
+                dignissimos non nisi quas accusantium rem doloremque. Eveniet vero tenetur ad dicta blanditiis, 
+                itaque sapiente voluptates eaque repudiandae dolorum rem molestiae harum ipsam doloribus 
+                deleniti, voluptatibus nihil sint non dolorem alias? Vel facilis voluptatum aperiam, quam 
+                nihil, minima earum placeat ratione facere voluptatem excepturi, ea a aliquam veritatis 
+                consectetur optio! Distinctio eaque, sapiente asperiores neque ipsa quas architecto amet veniam 
+                exercitationem nam reiciendis quod doloremque maxime totam sit aut quisquam. Illum nam 
+                necessitatibus aperiam dolor reiciendis voluptates.</p>
+            </div>
+
+            <div class="headet_text">
+                <h2>What is HTML?</h2>
+            </div>
+
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ab iure cum sequi? Illo, totam 
+                tempora? Dolorum incidunt sunt numquam aliquid totam libero impedit. Possimus architecto minus 
+                ipsum minima. Tempora impedit odio maxime, voluptatibus rerum amet ab expedita rem earum? 
+                Impedit commodi itaque accusamus dolores nostrum minima debitis dolore ea facilis quaerat nam 
+                sequi tempore ullam sapiente quisquam error odit maiores perferendis delectus, explicabo 
+                molestiae in? Debitis sapiente veritatis quis at non! Aliquam illum sapiente recusandae 
+                architecto, consectetur velit dicta ipsam omnis laboriosam cupiditate ipsum, amet id, quidem 
+                voluptatum nam? Nostrum laudantium minima ratione? Ipsa vitae officiis illum ullam. Quibusdam?</p>
+            </div>
+
+            <div class="headet_text">
+                <h2>What is HTML?</h2>
+            </div>
+
+            <div class="answer">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam unde consequatur a. Saepe, 
+                mollitia nam. A dignissimos alias, nesciunt atque id at commodi tempora, ab voluptatem neque 
+                quas labore quis sapiente sequi? Possimus, voluptates rerum sunt rem assumenda, quasi non 
+                numquam ex repudiandae veniam at ut dolores voluptatum dolor optio eaque. Magnam incidunt amet 
+                eius, quisquam repellat ipsam? Vitae quod assumenda, vel, accusantium quam ullam tempore sequi 
+                explicabo, ipsam voluptatem laudantium! Quasi aperiam magnam cum ex exercitationem quas sequi 
+                magni explicabo doloremque deserunt reprehenderit ipsa nihil quo, aspernatur saepe, quibusdam 
+                beatae, at voluptate id porro iste assumenda nostrum officia. Magni?</p>
+            </div>
+        </div>
+        <div class="b5">
+                <img src="./imeges/nature1.jpg">
+        </div>
+        <div class="b6">
+            <h2>This website maintain by mahesh &copy;2024</h2>
+        </div>
+
+    </div>
+</body>
+</html>

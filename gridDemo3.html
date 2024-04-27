@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="./ism/css/my-slider.css">
+     <script src="./ism/js/ism-2.2.min.js"></script>
+    <style>
+        *
+        {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .wrapper
+        {
+            width: 60%;
+            min-height: 500px;
+            /*border: 1px solid black;*/
+            margin: auto;
+            display: grid;
+            grid-template-rows: 70px auto 400px auto 70px;  
+            margin-top: 10px;
+
+        }
+        .main-logo-menu
+        {
+            width: 100%;
+            background-color: aqua;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            
+        }
+        .logo
+        {
+            width: 100%;
+            background-color: cadetblue;
+            min-height: 60px;
+            
+        }
+        .logo h2
+        {
+            padding: 20px;
+            color: white;
+            font-family: "Lugrasimo", cursive;
+            text-align: center;
+            text-shadow: 5px 5px 5px gray;
+        }
+        
+        .menu 
+        {
+            padding-top: 22px;
+            border-radius: 20px;
+        }
+        .menu a
+        {
+            text-decoration: none;
+            padding: 10px;
+            font-family: "Lugrasimo", cursive;
+            color: red;
+            font-size: 1.1em;
+        }
+        .menu a:hover
+        {
+            background-color: chartreuse;
+        }
+        
+        .silder
+        {
+            width: 100%;
+            background-color: chartreuse;
+            border-radius: 20px;
+            margin-top: 10px;
+        }
+
+        .maincontent
+        {
+            width: 100%;
+            background-color: gold;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            border-radius: 20px;
+            margin-top: 10px;
+        }
+        .img
+        {
+            width: 100%;
+        }
+        .img img
+        {
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+        }
+        .content 
+        {
+            width: 100%;
+        }
+        .content h1
+        {
+            padding: 10px;
+            font-family: "Lugrasimo", cursive;
+        }
+        .content p
+        {
+            padding: 10px;
+            text-align: justify;
+            font-size: 1.1em;
+        }
+        .content button
+        {
+            margin-left: 170px;
+            font-size: 1.2em;
+        }
+
+        .team
+        {
+            width: 100%;
+            margin-top: 10px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            grid-gap: 10px;
+        }
+        .team1
+        {
+            background-color: aquamarine;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        .team1 img
+        {
+            width: 100%;
+            height: 100%;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        .team2
+        {
+            background-color: wheat;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        .team2 img
+        {
+            width: 100%;
+            height: 100%;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        .team3
+        {
+            background-color: turquoise;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        .team3 img
+        {
+            width: 100%;
+            height: 100%; 
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        .footer
+        {
+            width: 100%;
+            background-color: violet;
+            margin-top: 10px;
+            border-radius: 15px;
+            margin-bottom: 10px;
+        }
+        .footer h2
+        {
+            text-align: center;
+            line-height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="main-logo-menu">
+            <div class="logo">
+                <h2>Company Name</h2>
+            </div>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Product</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+
+        <div class="silder">
+            
+
+<div class="ism-slider" data-play_type="loop" data-interval="3000" data-image_fx="zoompan" id="my-slider">
+    <ol>
+      <li>
+        <img src="ism/image/slides/flower-729514_1280.jpg">
+        <!-- <div class="ism-caption ism-caption-0">My slide caption text</div> -->
+      </li>
+      <li>
+        <img src="ism/image/slides/beautiful-701678_1280.jpg">
+        <!-- <div class="ism-caption ism-caption-0">My slide caption text</div> -->
+      </li>
+      <li>
+        <img src="ism/image/slides/summer-192179_1280.jpg">
+        <!-- <div class="ism-caption ism-caption-0">My slide caption text</div> -->
+      </li>
+      <li>
+        <img src="ism/image/slides/city-690332_1280.jpg">
+        <!-- <div class="ism-caption ism-caption-0">My slide caption text</div> -->
+      </li>
+      <li>
+        <img src="ism/image/slides/bora-bora-685303_1280.jpg">
+        <!-- <div class="ism-caption ism-caption-0">My slide caption text</div> -->
+      </li>
+    </ol>
+  </div>
+  
+  
+        </div>
+
+        <div class="maincontent">
+            <div class="img">
+                <img src="./imeges/emp.webp">
+            </div>
+            
+            <div class="content">
+                <h1>What is HTML ?..</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos 
+                quaerat ab non nisi, nulla temporibus quia nesciunt, odio qui 
+                perspiciatis quae. Odit adipisci facere aperiam quod? Deserunt rem 
+                facere, laborum eum possimus, adipisci voluptatum qui tempora 
+                recusandae, quas blanditiis nobis cumque velit? Soluta aut voluptate, 
+                nisi provident rem quibusdam exercitationem accusamus saepe assumenda 
+                quasi consequatur, nesciunt culpa asperiores quam commodi! Lorem, ipsum 
+                dolor sit amet consectetur adipisicing elit. Minima rem necessitatibus 
+                deserunt. Laborum, sed, quas id nobis hic asperiores voluptatibus 
+                possimus incidunt harum animi distinctio accusamus nesciunt. Adipisci, 
+                beatae asperiores?
+                </p>
+                <button>Learn More</button>
+            </div>
+        </div>
+
+
+        <div class="team">
+            <div class="team1">
+                <img src="./imeges/emp1.jpg">
+            </div>
+            <div class="team2">
+                <img src="./imeges/emp.webp">
+            </div>
+            <div class="team3">
+                <img src="./imeges/offi.webp">
+            </div>
+        </div>
+        <div class="footer">
+            <h2>This website maintain by Mahesh &copy;2024</h2>
+        </div>
+    </div>
+</body>
+</html>

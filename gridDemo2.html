@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ism/css/my-slider.css"/>
+    <script src="ism/js/ism-2.2.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+        *
+        {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .box
+        {
+            width: 80%;
+            min-height: 300px;
+            /*border: 1px solid black;*/
+            margin: auto;
+            display: grid;
+            /*grid-template-columns: 100px 200px auto;*/
+            grid-template-columns: repeat(3,1fr);
+            /*grid-template-rows: 100px 100px;*/
+            grid-template-rows:60px 400px;
+
+            /*grid-row-gap: 10px;
+            grid-column-gap: 10px;*/
+
+            grid-gap: 10px;
+            
+            grid-auto-rows:auto;/*use default height for rows*/
+        }
+        .b1
+        {
+            background-color: aqua;
+            color: white;
+
+           /* grid-row-start: 2;
+            grid-row-end: 3;
+            grid-row: 2/3;*/
+
+            /*grid-column-start: 3;
+            grid-column-end: 4;
+            grid-column: 3/4;*/
+
+            /*grid-area: 2/3/3/4;*/
+
+            grid-column: 1/-1;
+
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-gap: 10px;
+
+        }
+        .b1 .logo
+        {
+            /*border: 1px solid white;*/
+        }
+        .b1 .menu
+        {
+            /*border: 1px solid white;*/
+            padding-top: 10px;
+            text-decoration: none
+        }
+        .b1 .logo h1
+        {
+            padding: 8px;
+            font-family: "Sedan", serif;
+        }
+        .b1 .menu ul
+        {
+            display: flex;
+        }
+        .b1 .menu ul li 
+        {
+            list-style-type: none;
+            padding: 10px;
+        }
+        .b1 .menu  ul li a
+        {
+            text-decoration: none;
+            font-size: 1.2em;
+            font-family: "Sedan", serif;
+        }
+        
+        .b2
+        {
+            background-color: brown;
+            color: white;
+            grid-column: 1/-1;
+            border-radius: 15px;
+        }
+        .b3
+        {
+            background-color: rgb(76, 149, 49);
+            color:white;
+            grid-column: 1/-1;
+            border-radius: 15px;
+        }
+        .b3 .content h2
+        {
+            padding: 10px;
+            font-family: "Sedan", serif;
+        }
+        .b3 .answer p
+        {
+            padding: 10px;
+            text-align: justify;
+        }
+        .b4
+        {
+            background-color: crimson;
+            color: white;
+            border-radius: 30px;
+        }
+        .b4 img
+        {
+            width: 100%;
+            height: 100%;
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+        .b5
+        {
+            background-color:rgb(237, 237, 100);
+            color: white;
+            border-radius: 30px;
+        }
+        .b5 img
+        {
+            width: 100%;
+            height: 100%;
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+        .b6
+        {
+            background-color: royalblue;
+            color: white;
+            /*grid-area: 1/1/2/2;*/
+            border-radius: 30px;
+        }
+        .b6 img
+        {
+            width: 100%;
+            height: 100%;
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+        .b7
+        {
+            background-color: aqua;
+            grid-column: 1/-1;
+            border-radius: 15px;
+        }
+        .b7 h1
+        {
+            text-align: center;
+            min-height: 60px;
+            padding-top: 15px;
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div class="box">
+
+        <div class="b1">
+            <div class="logo">
+                <h1>Company Name</h1>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Product</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="b2">
+            <div class="ism-slider" data-play_type="loop" data-interval="3000" data-image_fx="zoompan" id="my-slider">
+                <ol>
+                  <li>
+                    <img src="ism/image/slides/flower-729514_1280.jpg">
+                    <!-- <div class="ism-caption ism-caption-0">My slide caption text</div> -->
+                  </li>
+                  <li>
+                    <img src="ism/image/slides/beautiful-701678_1280.jpg">
+                    <!-- <div class="ism-caption ism-caption-0">My slide caption text</div> -->
+                  </li>
+                  <li>
+                    <img src="ism/image/slides/summer-192179_1280.jpg">
+                    <!-- <div class="ism-caption ism-caption-0">My slide caption text</div> -->
+                  </li>
+                  <li>
+                    <img src="ism/image/slides/city-690332_1280.jpg">
+                    <!-- <div class="ism-caption ism-caption-0">My slide caption text</div> -->
+                  </li>
+                  <li>
+                    <img src="ism/image/slides/bora-bora-685303_1280.jpg">
+                    <!-- <div class="ism-caption ism-caption-0">My slide caption text</div> -->
+                  </li>
+                </ol>
+              </div>
+        </div>
+        <div class="b3">
+
+
+            <div class="content">
+                <h2>What Is CSS ?...</h2>
+            </div>
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, 
+                possimus quod iste voluptates veniam, nesciunt suscipit cumque eius, 
+                adipisci sit at dolore cupiditate rem nulla nisi ratione. Id mollitia 
+                consectetur dolorum. Aut repellendus sint enim tenetur magnam culpa 
+                odit dignissimos error praesentium ipsum velit voluptate repellat, 
+                architecto quidem facilis corporis? Nobis voluptatibus, velit dicta, 
+                porro molestias obcaecati animi placeat minus vel dolorem maxime, 
+                laborum mollitia aliquam commodi deleniti necessitatibus delectus nemo 
+                omnis sequi consequatur. Pariatur iste inventore a assumenda! Dolorem 
+                laudantium recusandae placeat hic nesciunt tempore veniam nobis 
+                adipisci sapiente! Praesentium sit aut ut iste laboriosam explicabo 
+                deleniti et magni.</p>
+            </div>
+
+            <div class="content">
+                <h2>What Is CSS ?...</h2>
+            </div>
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, 
+                possimus quod iste voluptates veniam, nesciunt suscipit cumque eius, 
+                adipisci sit at dolore cupiditate rem nulla nisi ratione. Id mollitia 
+                consectetur dolorum. Aut repellendus sint enim tenetur magnam culpa 
+                odit dignissimos error praesentium ipsum velit voluptate repellat, 
+                architecto quidem facilis corporis? Nobis voluptatibus, velit dicta, 
+                porro molestias obcaecati animi placeat minus vel dolorem maxime, 
+                laborum mollitia aliquam commodi deleniti necessitatibus delectus nemo 
+                omnis sequi consequatur. Pariatur iste inventore a assumenda! Dolorem 
+                laudantium recusandae placeat hic nesciunt tempore veniam nobis 
+                adipisci sapiente! Praesentium sit aut ut iste laboriosam explicabo 
+                deleniti et magni.</p>
+            </div>
+
+            <div class="content">
+                <h2>What Is CSS ?...</h2>
+            </div>
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, 
+                possimus quod iste voluptates veniam, nesciunt suscipit cumque eius, 
+                adipisci sit at dolore cupiditate rem nulla nisi ratione. Id mollitia 
+                consectetur dolorum. Aut repellendus sint enim tenetur magnam culpa 
+                odit dignissimos error praesentium ipsum velit voluptate repellat, 
+                architecto quidem facilis corporis? Nobis voluptatibus, velit dicta, 
+                porro molestias obcaecati animi placeat minus vel dolorem maxime, 
+                laborum mollitia aliquam commodi deleniti necessitatibus delectus nemo 
+                omnis sequi consequatur. Pariatur iste inventore a assumenda! Dolorem 
+                laudantium recusandae placeat hic nesciunt tempore veniam nobis 
+                adipisci sapiente! Praesentium sit aut ut iste laboriosam explicabo 
+                deleniti et magni.</p>
+            </div>
+
+            <div class="content">
+                <h2>What Is CSS ?...</h2>
+            </div>
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, 
+                possimus quod iste voluptates veniam, nesciunt suscipit cumque eius, 
+                adipisci sit at dolore cupiditate rem nulla nisi ratione. Id mollitia 
+                consectetur dolorum. Aut repellendus sint enim tenetur magnam culpa 
+                odit dignissimos error praesentium ipsum velit voluptate repellat, 
+                architecto quidem facilis corporis? Nobis voluptatibus, velit dicta, 
+                porro molestias obcaecati animi placeat minus vel dolorem maxime, 
+                laborum mollitia aliquam commodi deleniti necessitatibus delectus nemo 
+                omnis sequi consequatur. Pariatur iste inventore a assumenda! Dolorem 
+                laudantium recusandae placeat hic nesciunt tempore veniam nobis 
+                adipisci sapiente! Praesentium sit aut ut iste laboriosam explicabo 
+                deleniti et magni.</p>
+            </div>
+
+            <div class="content">
+                <h2>What Is CSS ?...</h2>
+            </div>
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, 
+                possimus quod iste voluptates veniam, nesciunt suscipit cumque eius, 
+                adipisci sit at dolore cupiditate rem nulla nisi ratione. Id mollitia 
+                consectetur dolorum. Aut repellendus sint enim tenetur magnam culpa 
+                odit dignissimos error praesentium ipsum velit voluptate repellat, 
+                architecto quidem facilis corporis? Nobis voluptatibus, velit dicta, 
+                porro molestias obcaecati animi placeat minus vel dolorem maxime, 
+                laborum mollitia aliquam commodi deleniti necessitatibus delectus nemo 
+                omnis sequi consequatur. Pariatur iste inventore a assumenda! Dolorem 
+                laudantium recusandae placeat hic nesciunt tempore veniam nobis 
+                adipisci sapiente! Praesentium sit aut ut iste laboriosam explicabo 
+                deleniti et magni.</p>
+            </div>
+
+
+        </div>
+        <div class="b4">
+            <img src="./imeges/offi.webp" >
+        </div>
+        <div class="b5">
+            <img src="./imeges/emp.webp">
+        </div>
+        <div class="b6">
+            <img src="./imeges/emp1.jpg">
+        </div>
+
+        <div class="b7">
+            <h1>This website is maintain by Mahesh&copy;2024</h1>
+        </div>
+    </div>
+</body>
+</html>

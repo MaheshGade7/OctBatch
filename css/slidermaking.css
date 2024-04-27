@@ -11,3 +11,13 @@
     /* border: 1px solid red; */
     margin: auto;
 }
+.container h2:hover{
+    color: red;
+}
+.container h2::selection{
+    background-color: yellow;
+}
+.container h2::first-letter{
+    font-size: xx-large;
+    color: brown;
+}

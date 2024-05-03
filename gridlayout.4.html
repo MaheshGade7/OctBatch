@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container
+        {
+            width: 60%;
+            height: 100vh;
+            /*border: 1px solid black;*/
+            margin: auto;
+            display: grid;
+            grid-template-areas: "first first first"
+                                 "second third four"
+                                 "five third six"
+                                 "five seven seven"
+                                 "eight eight nine";
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 1fr 1fr 2fr 1fr 1fr;
+            grid-gap: 10px;
+        }
+        .first
+        {
+            grid-area: first;
+            background-color: #FF5BAE;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+            font-size: 2em;
+            border-radius: 10px;
+        }
+        .second
+        {
+            grid-area: second;
+            background-color: #E72929;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+            font-size: 2em;
+            border-radius: 10px;
+        }
+        .third
+        {
+            grid-area: third;
+            background-color: #FFAF45;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+            font-size: 2em;
+            border-radius: 10px;
+        }
+        .four
+        {
+            grid-area: four;
+            background-color: #E72929;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+            font-size: 2em;
+            border-radius: 10px;
+        }
+        .five
+        {
+            grid-area: five;
+            background-color: #EE4266;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+            font-size: 2em;
+            border-radius: 10px;
+        }
+        .six
+        {
+            grid-area: six;
+            background-color: #67C6E3;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+            font-size: 2em;
+            border-radius: 10px;
+        }
+        .seven
+        {
+            grid-area: seven;
+            background-color: #E8751A;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+            font-size: 2em;
+            border-radius: 10px;
+        }
+        .eight
+        {
+            grid-area: eight;
+            background-color: #6420AA;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+            font-size: 2em;
+            border-radius: 10px;
+
+        }
+        .nine 
+        {
+            grid-area: nine;
+            background-color: #FFD23F;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+            font-size: 2em; 
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="first">1</div>
+        <div class="second">2</div>
+        <div class="third">3</div>
+        <div class="four">4</div>
+        <div class="five">5</div>
+        <div class="six">6</div>
+        <div class="seven">7</div>
+        <div class="eight">8</div>
+        <div class="nine">9</div>
+        
+    </div>
+</body>
+</html>

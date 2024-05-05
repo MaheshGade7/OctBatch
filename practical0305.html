@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .wrapper
+        {
+            width: 80%;
+            min-height: 610px;
+            border: 1px solid red;
+            margin: auto;
+            background-color:firebrick;
+        }
+        .box
+        {
+            width: 90%;
+            min-height: 550px;
+            border: 1px solid black;
+            margin-top: 30px;
+            margin-left: 60px;
+            background-color: aquamarine ;
+            display: flex;
+            
+        }
+        .img
+        {
+            width: 40%;
+            min-height: 530px;
+            border: 1px solid black;
+            
+            
+        }
+        .box .img img
+        {
+            width: 100%;
+            height: 100%;
+            
+        }
+        .box .content
+        {
+            width: 60%;
+            min-height: 530px;
+            border: 1px solid black;
+        }
+        .content
+        {
+            background-color: blanchedalmond;
+        }
+        .content h1
+        {
+            padding: 20px;
+            margin-left: 50px;
+            text-align: center;
+        }
+        
+        .label
+        {
+            width: 100%;
+            font-size: 16px;
+            margin-left: 10px;
+        }
+        input[type=text]
+        {
+            width: 35%;
+            margin-left: 10px;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        input[type=password]
+        {
+            width: 35%;
+            margin-left: 10px;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        input[type=Birthday]
+        {
+            width: 35%;
+            margin-left: 10px;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        input[type=gender]
+        {
+            width: 35%;
+            margin-left: 10px;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        input[type=spayed]
+        {
+            width: 35%;
+            margin-left: 10px;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        input[type=weight]
+        {
+            width: 94%;
+            margin-left: 10px;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+
+        <div class="box">
+
+            <div class="img">
+                <img src="./imeges/dog.jpg">
+            </div>
+            
+            <div class="content">
+                <h1>Yay,Puppies! Ensure Your<br>
+                    Pup gets the best care!
+                </h1>
+
+                <div class="new">
+                    <form action="#" method="post">
+
+                        <label for="lbluser">Name</label>
+                        <input type="text" id="lbluser" name="lbluser" autocomplete="off" placeholder="Pet's name"><br>
+    
+                        <label for="lblpass">Breed</a></label>
+                        <input type="password" id="lblpass" name="lblpass" autocomplete="off" placeholder="pet's breed"><br>
+
+                        <label for="lbldob">Birthday</a></label>
+                        <input type="Birthday" id="lbldob" name="Birthday" autocomplete="off" placeholder="MM/DD/YYYY"><br>
+
+                        <label for="lblgender">Gender</label>
+                        <input type="gender" id="iblgender" name="gender" autocomplete="off" placeholder="Female Male"><br>
+
+                        <label for="lblspayed">Spayed Or Neutered</label>
+                        <input type="spayed" id="lblspayed" name="spayed" autocomplete="off" placeholder="spayed neutered"><br>
+
+                        <label for="lblweight">Weight</label>
+                        <input type="weight" id="lblweight" name="weight" autocomplete="off" placeholder="0-25lbs 25-50lbs 50-100lbs 100+lbs">
+
+    
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

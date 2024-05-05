@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poetsen+One&display=swap" rel="stylesheet">
+    <style>
+        *
+        {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container
+        {
+            width: 60%;
+            min-height: 300px;
+            border: 1px solid black;
+            margin: auto;
+            font-family: "Libre Baskerville", serif;
+        }
+        .header
+        {
+            width: 100%;
+            min-height: 60px;
+            background-color: #F6F5F2;
+        }
+        .header h2
+        {
+            padding: 20px;
+            text-align: center;
+            font-size: 2em;
+        }
+        .main-div
+        {
+            width: 100%;
+            min-height: 300px;
+            border: 1px solid red;
+            display: flex;
+            flex-direction: row;
+            
+        }
+        .one 
+        {
+            width: 50%;
+            min-height: 320px;
+            border: 1px solid red;
+            background-color: #F6F5F2;
+            
+        }
+        .one h2
+        {
+            margin-left: 120px;
+            position: absolute;
+            padding-top: 35px;
+        }
+        .one img
+        {
+            margin: 20px;
+            margin-left: 40px;
+            
+        }
+        .one p
+        {
+            text-align: justify;
+            margin-left: 35px;
+            margin-right: 35px;
+            font-size: 0.7em;
+        }
+        .two 
+        {
+            width: 50%;
+            min-height: 320px;
+            border: 1px solid red;
+            background-color: #F6F5F2;  
+        }
+        .two img
+        {
+            margin-left: 80px;
+            padding-top: 10px;
+        }
+        .two h3
+        {
+            text-align: center;
+            padding-top: 20px;
+        }
+        input[type=text]
+        {
+            width: 94%;
+            margin-left: 10px;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        input[type=password]
+        {
+            width: 94%;
+            margin-left: 10px;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="header">
+            <h2>Register</h2>
+        </div>
+
+        <div class="main-div">
+            <div class="one">
+                <h2>Marketing</h2>
+                <img src="../imeges/market logo.png" width="64px" height="64px">
+                
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus 
+                suscipit quisquam aliquam similique nam nisi asperiores assumenda provident 
+                dolore. Sequi!</p>
+
+                <h2>Fully coded in HTML</h2>
+                <img src="../imeges/rocket.png" width="64px" height="64px">
+                
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus 
+                suscipit quisquam aliquam similique nam nisi asperiores assumenda provident 
+                dolore. Sequi!</p>
+
+                <h2>Built Audience</h2>
+                <img src="../imeges/icon.png" width="64px" height="64px">
+                
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus 
+                suscipit quisquam aliquam similique nam nisi asperiores assumenda provident 
+                dolore. Sequi!</p>
+
+            </div>
+            <div class="two">
+                <img src="../imeges/facebook icon.png" width="50px" height="50px">
+                <img src="../imeges/insta icon.png" width="50px" height="50px">
+                <img src="../imeges/linked in icon.png" width="50px" height="50px">
+
+                <h3>Or be Classical</h3>
+
+                <form action="#" method="post">
+                    <label for="lbluser">First Name</label>
+                    <input type="text" id="lbluser" name="lbluser" autocomplete="off" placeholder="First Name...">
+
+                    <label for="lbluser">Email Addrees</label>
+                    <input type="text" id="lbluser" name="lbluser" autocomplete="off" placeholder="E-mail...">
+
+                    <label for="lblpass">Password </label>
+                    <input type="password" id="lblpass" name="lblpass" autocomplete="off" placeholder="Password...">
+
+                    <input type="submit" value="Get Started">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <style>
+        *
+        {
+            padding: 10;
+            margin: 10;
+            box-sizing: border-box;
+        }
+        .container
+        {
+            width: 100%;
+            min-height: 300px;
+           /* border: 1px solid black;*/
+            margin: auto;
+            font-family: "Playfair Display", serif;
+        }
+        .main
+        {
+            width: 100%;
+            min-height: 90px;
+            /*border: 1px solid red;*/
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .main .b1
+        {
+            width: 33%;
+            min-height: 90px;
+           /* border: 1px solid gray;*/
+            background-color: white;
+        }
+        .main .b2
+        {
+            width: 25%;
+            min-height: 90px;
+            /*border: 1px solid gray;*/
+            background-color: white;
+        }
+        .main .b2
+        {
+            width: 45%;
+            min-height: 90px;
+            /*border: 1px solid gray;*/
+            background-color: white;
+        }
+        .b2 ul
+        {
+            display: flex;
+        }
+        .b2 ul li
+        {
+            list-style-type: none;
+            padding: 15px;
+        }
+        .b2 ul li a
+        {
+            text-decoration: none;
+            font-size: 1.7em;
+        }
+
+        .main .b3
+        {
+            width: 30%;
+            min-height: 90px;
+            /*border: 1px solid gray;*/
+            background-color: white;
+        }
+        .b3 button
+        {
+            margin-left: 150px;
+            font-size: 2em;
+            margin-top: 30px;
+            border-radius: 20px;
+            background-color: black;
+            color: white;
+        }
+        .b1 img
+        {
+            width: 64px;
+            height: 64px;
+            margin-left: 70px;
+            margin-top: 10px;
+        }
+        .b1 h1
+        {
+            position: absolute;
+            margin-left: 150px;
+            padding-top: 10px;
+        }
+        .img img
+        {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .img h2,h1
+        {
+            position: absolute;
+        }
+        .img h2
+        {
+            padding-top: 330px;
+            color: white;
+            margin-left: 120px;
+        }
+        .img h1
+        {
+            padding-top: 370px;
+            color: white;
+            margin-left: 120px;
+            font-size: 4em;
+        }
+        .img button
+        {
+            position: absolute;
+            font-size: 2em;
+            border-radius: 20px;
+            background-color: gray;
+            color: white;
+            margin-top: 550px;
+            margin-left: 1200px;
+        }
+
+
+        .cont
+        {
+            width: 100%;
+            min-height: 500px;
+            border: 1px solid black;
+        }
+        .cont h3
+        {
+            padding-top: 20px;
+            margin-left: 40px;
+        }
+        .cont h1
+        {
+            margin-left: 40px;
+            font-size: 3em;
+        }
+        .cont p
+        {
+            padding-top: 170px;
+            margin-left: 700px;
+            font-size: 1.5em
+        }
+        .cont button
+        {
+            font-size: 1.9em;
+            border-radius: 20px;
+            background-color: black;
+            color: white;
+            margin-left: 50px;
+        }
+        .img2 h2
+        {
+            position: absolute;
+            margin-left: 100px;
+            margin-top: 50px;
+            color: white;
+        }
+        .img2 h1
+        {
+            color: white;
+            font-size: 5em;
+            margin-top: 250px;
+            margin-left: 100px;
+        }
+        .img2 button
+        {
+            position: absolute;
+            font-size: 2em;
+            background-color: black;
+            color: white;
+            border-radius: 20px;
+            margin-top: 650px;
+            margin-left: 90px;
+        }
+        .img2 img
+        {
+            width: 100%;
+            height: 100%;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="b1">
+                <h1>BuildM5</h1>
+                <img src="./imeges/logo.png">
+                
+            </div>
+            <div class="b2">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="b3">
+                <button>Get Started</button>
+            </div>
+        </div>
+
+        <div class="img">
+            <h2 style="text-decoration: underline;">Construction Company</h2>
+            <h1>Home Builder</h1>
+            <button>Read More</button>
+            <img src="./imeges/background1.jpg">
+        </div>
+
+        <div class="cont">
+            <h3>Features</h3>
+            <h1>Сonstruction <br>services of any<br> complexity</h1>
+            
+            <p>Construction is a fundamental process that shapes our built environment.<br>     
+                From small-scale residential projects to large-scale infrastructural <br>
+               developments, construction plays a crucial role in creating the physical<br> 
+               spaces we inhabit.</p>
+               <button>Read More</button>
+        </div>
+
+        <div class="img2">
+            <h2>Projects</h2>
+            <h1>Professional construction <br>company for projects of <br>any complexity</h1>
+            <button>Read More</button>
+            <img src="./imeges/background2.jpg">
+           
+        </div>
+    </div>
+</body>
+</html>

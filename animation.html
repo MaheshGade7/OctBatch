@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box
+        {
+            width: 250px;
+            height: 250px;
+            background-color: aqua;
+            animation-name: anni;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            border-radius: 20px;
+            position: relative;
+        }
+       
+        @keyframes anni 
+        {
+            /*from
+            {
+                background-color: red;
+            }
+            to 
+            {
+                background-color: limegreen;
+            }*/
+            0%
+            {
+                background-color: red;
+                top:0;
+                left: 200px;
+            }
+            25%
+            {
+                background-color: aqua;
+                left: 200px;
+                top: 200px;
+            }
+            50%
+            {
+                background-color: chartreuse;
+                top: 200px;
+            }
+            75%
+            {
+                background-color: royalblue;
+            }
+            100%
+            {
+                background-color: black;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        
+    </div>
+</body>
+</html>

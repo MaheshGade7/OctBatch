@@ -51,6 +51,10 @@ nav ul li a
     height: 100vh;
     background-color: aqua;
 }
+#section1 .image img
+{ 
+    border-radius: 170px;
+}
 #section1 h2
 {
     color: red;

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap" rel="stylesheet">
+    <style>
+        *
+        {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .box
+        {
+            width: 80%;
+            height: 100vh;
+            /*border: 1px solid black;*/
+            margin: auto;
+            display: grid;
+            grid-template-areas: "b1 b1 b1"
+                                 "b2 b3 b3"
+                                 "b2 b4 b5"
+                                 "b6 b6 b6";
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr; 
+            grid-gap: 10px;  
+            text-align: center;
+            line-height: 170px;
+            font-family: "Sevillana", cursive;
+            font-size: 2em;
+        }
+        .b1
+        {
+            background-color: rgb(255, 0, 195);
+            grid-area: b1;
+            border-radius: 20px;           
+        }
+        .b2
+        {
+            background-color: rgb(68, 255, 0);
+            grid-area: b2;
+            border-radius: 20px;
+        }
+        .b3
+        {
+            background-color: rgb(241, 206, 9);
+            grid-area: b3;
+            border-radius: 20px;
+        }
+        .b4
+        {
+            background-color: rgb(255, 17, 0);
+            grid-area: b4;
+            border-radius: 20px;
+        }
+        .b5
+        {
+            background-color: rgb(0, 242, 255);
+            grid-area: b5;
+            border-radius: 20px;
+        }
+        .b6
+        {
+            background-color: rgb(37, 160, 51);
+            grid-area: b6;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="b1">Header</div>
+        <div class="b2">SideBar</div>
+        <div class="b3">Content-1</div>
+        <div class="b4">Content-2</div>
+        <div class="b5">Content-3</div>
+        <div class="b6">Footer</div>
+    </div>
+</body>
+</html>

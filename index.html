@@ -3,106 +3,229 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        *
-        {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
-        .box
-        {
-            width: 80%;
-            height: 100vh;
-            margin: auto;
-            display: grid;
-            grid-template-areas:    "b1 b2 b2 b2"
-                                    "b3 b3 b3 b4"
-                                    "b5 b6 b7 b8"
-                                    "b9 b9 b9 b10";
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr;
-            grid-gap: 10px;
-            text-align: center;
-            line-height: 170px;
-            font-size: 2em;
-        }
-        .b1
-        {
-            background-color: aqua;
-            grid-area: b1;
-            border-radius: 15px;
-        }
-        .b2
-        {
-            background-color: rgb(98, 232, 8);
-            grid-area: b2;
-            border-radius: 15px;
-        }
-        .b3
-        {
-            background-color: rgb(13, 9, 217);
-            grid-area: b3;
-            border-radius: 15px;
-        }
-        .b4
-        {
-            background-color: rgb(250, 10, 222);
-            grid-area: b4;
-            border-radius: 15px;
-        }
-        .b5
-        {
-            background-color: rgb(243, 223, 2);
-            grid-area: b5;
-            border-radius: 15px;
-        }
-        .b6
-        {
-            background-color: rgb(255, 0, 0);
-            grid-area: b6;
-            border-radius: 15px;
-        }
-        .b7
-        {
-            background-color: rgb(202, 5, 179);
-            grid-area: b7;
-            border-radius: 15px;
-        }
-        .b8
-        {
-            background-color: rgb(13, 15, 170);
-            grid-area: b8;
-            border-radius: 15px;
-        }
-        .b9
-        {
-            background-color: rgb(194, 200, 7);
-            grid-area: b9;
-            border-radius: 15px;
-        }
-        .b10
-        {
-            background-color: rgb(225, 147, 4);
-            grid-area: b10;
-            border-radius: 15px;
-        }
-    </style>
+    <title>Personal Portfalio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./CSS/index.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="box">
-        <div class="b1">1</div>
-        <div class="b2">2</div>
-        <div class="b3">3</div>
-        <div class="b4">4</div>
-        <div class="b5">5</div>
-        <div class="b6">6</div>
-        <div class="b7">7</div>
-        <div class="b8">8</div>
-        <div class="b9">9</div>
-        <div class="b10">10</div>
-
+    <!-- ------------home--------------- -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./Images/mahesh logo.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfalio">Portfalio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi,I'm <span>Mahesh</span><br> Gade From India</h1>
+            </div>
+        </div>
     </div>
+
+<!-- --------------About------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./Images/_NSD6899.JPG">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis minus cumque 
+                    perferendis consequatur possimus omnis repellendus, aspernatur, rem porro nam eaque maxime 
+                    quod similique eligendi autem unde non nemo perspiciatis quaerat cupiditate! Quisquam 
+                    repellendus, earum dolorum esse quos id quam laboriosam, non fugiat reiciendis architecto 
+                    iste quibusdam voluptate temporibus odit culpa voluptas. Sit, nihil, blanditiis earum 
+                    repudiandae nemo possimus maiores atque quibusdam eaque facilis quia commodi consectetur, 
+                    aliquam illo perspiciatis laudantium cum saepe. Rerum maxime odio ducimus asperiores 
+                    laborum ex totam provident inventore temporibus aspernatur? Molestiae amet voluptatem 
+                    temporibus dolore totam error tenetur ipsa! Asperiores aut eligendi commodi quos sed!</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Desining Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Web App Development</li>
+                        <li><span>App Development</span><br>Building Android</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2024 - Current</span><br>UI/UX Design Training at ET Institude</li>
+                        <li><span>2019 - 2021</span><br>Team lead at startup LLc</li>
+                        <li><span>2017 - 2019</span><br>UI/UX Design Executive at coin Digital Ltd.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023</span><br>BCS at solapur university</li>
+                        <li><span>2020</span><br>HSC at pune university</li>
+                        <li><span>2018</span><br>SSC at pune university</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- ----------------------services----------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam voluptate libero, ex in consectetur molestias!</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam voluptate libero, ex in consectetur molestias!</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam voluptate libero, ex in consectetur molestias!</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+        </div>
+    </div>
+
+<!-- ----------------portfalio---------------- -->
+    <div id="portfalio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./Images/mobile img.webp" width="400" height="300">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem distinctio voluptates laboriosam perferendis voluptatibus unde!</p>
+                <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+                </div>
+                <div class="work">
+                    <img src="./Images/mobile img.webp" width="400" height="300">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem distinctio voluptates laboriosam perferendis voluptatibus unde!</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./Images/mobile img.webp" width="400" height="300">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem distinctio voluptates laboriosam perferendis voluptatibus unde!</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+
+    <!-- -------------------contact------------------- -->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i> gademahesh2002@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 7620389056</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="./Images/Mahesh Gade.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Mahesh <i class="fa-solid fa-heart"></i> with Easy Tutorials</p>
+        </div>
+     </div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname)
+        {
+            for(tablink of tablinks) 
+            {
+                tablink.classList.remove("active-link");
+            }
+        
+            for(tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");     
+        }
+        </script>
+        <script>
+            var sidemeu=document.getElementById("sidemenu");
+        function openmenu()
+        {
+            sidemeu.style.right="0";
+        }
+        function closemenu()
+        {
+            sidemeu.style.right="-200px";
+        }
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwmbh1RMsAh_A6fSC4B9WXOg1V6hd9wToquT8MQxnKANyvVHSPSeDmE6zU90lR2x4z1Yw/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML="Message Send Successfully"
+                    setTimeout(function()
+                    {
+                        msg.innerHTML=""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
 </body>
 </html>
